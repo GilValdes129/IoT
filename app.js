@@ -10,6 +10,11 @@ sp.innerHTML = randomizer
     
 const est = document.getElementById("Estado")
 const btn = document.getElementById("SOS")
+const sound = document.getElementById("AudioAlarm")
+function playAudio(){
+    const audio = new Audio('sonido-de-alarma-emergencia-sos.mp3');
+    audio.play();
+}
 
 if (randomizer >= 60 && randomizer <= 100) {
     est.innerHTML = "normal"
@@ -30,6 +35,7 @@ else if (randomizer <= 50) {
     btn.style.backgroundColor = "red"
     btn.style.color = "white"
     btn.style.fontWeight = "900"
+    playAudio()
 }
 else if (randomizer >= 51 && randomizer <= 59) {
     est.innerHTML = "baja"

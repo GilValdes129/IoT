@@ -14,11 +14,62 @@
             <h1>Monitor de frecuencia cardiaca</h1>
             <h3><i class="fas fa-heart-pulse"></i> <span id="FrecuenciaCardiaca"> </span> lpm</h3>
             <p>Su frecuencia cardiaca es: <span id="Estado"></span></p>
-            <button id="SOS"></button>
+            <button id="SOS" onclick="playAudio()"></button>
+            <table>
+                <tr>
+                    <th>Edad</th>
+                    <th class="TableHeading">Frecuencia normal</th>
+                    <th class="TableHeading">Frecuencia Baja</th>
+                    <th class="TableHeading">Frecuencia Alta</th>
+                </tr>
+                <tr class="TableRow">
+                    <td>Niños de 1 a 2 años</td>
+                    <td>80 a 130 lpm</td>
+                    <td>Menor a 80 lpm</td>
+                    <td>Mayor a 130 lpm</td>
+                </tr>
+                <tr class="TableRow">
+                    <td>Niños de 3 a 4</td>
+                    <td>80 a 120 lpm</td>
+                    <td>Menor a 80 lpm</td>
+                    <td>Mayor a 120 lpm</td>
+                </tr>
+                <tr class="TableRow">
+                    <td>Niños de 5 a 6</td>
+                    <td>75 a 115 lpm</td>
+                    <td>Menor a 75 lpm</td>
+                    <td>Mayor a 115 lpm</td>
+                </tr>
+                <tr class="TableRow">
+                    <td>Niños de 7 a 9</td>
+                    <td>70 a 110 lpm</td>
+                    <td>Menor a 70 lpm</td>
+                    <td>Mayor a 110 lpm</td>
+                </tr>
+                <tr class="TableRow">
+                    <td>Niños de 10 en adelante</td>
+                    <td>60 a 100 lpm</td>
+                    <td>Menor a 60 lpm</td>
+                    <td>Mayor a 100 lpm</td>
+                </tr>
+                <tr class="TableRow">
+                    <td>Adultos</td>
+                    <td>60 a 100 lpm</td>
+                    <td>Menor a 60 lpm</td>
+                    <td>Mayor a 100 lpm</td>
+                </tr>
+                <tr class="TableRow">
+                    <td>Atletas</td>
+                    <td>40 a 60 lpm</td>
+                    <td>Menor a 40 lpm</td>
+                    <td>Mayor a 60 lpm</td>
+                </tr>
+            </table>
         </div>
     </div>
 
-    
+    <audio id="AudioAlarm" src="https://vincens2005.github.io/vr/Nyan%20Cat%20[original].mp3"></audio>
+    <audio src=""></audio>
 
     <script src="/app.js"></script>
 </body>
