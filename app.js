@@ -14,6 +14,7 @@ const sound = document.getElementById("AudioAlarm")
 function playAudio(){
     const audio = new Audio('sonido-de-alarma-emergencia-sos.mp3');
     audio.play();
+    audio.loop = true
 }
 
 if (randomizer >= 60 && randomizer <= 100) {
